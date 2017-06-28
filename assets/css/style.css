@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+.row:after {
+  clear: both; }
+
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-1-offset {
+  margin-left: widthColumns(1); }
+
+.col-2-offset {
+  margin-left: widthColumns(2); }
+
+.col-3-offset {
+  margin-left: widthColumns(3); }
+
+.col-4-offset {
+  margin-left: widthColumns(4); }
+
+.col-5-offset {
+  margin-left: widthColumns(5); }
+
+.col-6-offset {
+  margin-left: widthColumns(6); }
+
+.col-7-offset {
+  margin-left: widthColumns(7); }
+
+.col-8-offset {
+  margin-left: widthColumns(8); }
+
+.col-9-offset {
+  margin-left: widthColumns(9); }
+
+.col-10-offset {
+  margin-left: widthColumns(10); }
+
+.col-11-offset {
+  margin-left: widthColumns(11); }
+
+.col-12-offset {
+  margin-left: widthColumns(12); }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.list-none {
+  list-style: none; }
+
+.list-none li {
+  padding: 3vh;
+  font-family: "Raleway", sans-serif; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.titule {
+  font-family: "Roboto", sans-serif;
+  color: #424242; }
+
+.content {
+  font-family: "Raleway", sans-serif;
+  color: #414549; }
+
+.method-podcast {
+  height: 100vh; }
+  .method-podcast h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 23px;
+    letter-spacing: .4px; }
+  .method-podcast h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 28px;
+    margin-bottom: 23px; }
+  .method-podcast p {
+    max-height: 96px;
+    line-height: 24px; }
+
+/*# sourceMappingURL=style.css.map */
