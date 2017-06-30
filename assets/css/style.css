@@ -5,18 +5,20 @@
 
 .container {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto; }
 
-.row:before, .row:after {
+.templateRow, .row:before, .row:after {
   content: " ";
   display: table; }
+
 .row:after {
   clear: both; }
 
 [class*="col-"] {
+  float: left;
   min-height: 7px;
-  padding: 12px;
-  float: left; }
+  padding: 7px 0px; }
 
 .col-1 {
   width: 8.33333%; }
@@ -55,40 +57,43 @@
   width: 100%; }
 
 .col-1-offset {
-  margin-left: widthColumns(1); }
+  margin-left: 8.33333%; }
 
 .col-2-offset {
-  margin-left: widthColumns(2); }
+  margin-left: 16.66667%; }
 
 .col-3-offset {
-  margin-left: widthColumns(3); }
+  margin-left: 25%; }
 
 .col-4-offset {
-  margin-left: widthColumns(4); }
+  margin-left: 33.33333%; }
 
 .col-5-offset {
-  margin-left: widthColumns(5); }
+  margin-left: 41.66667%; }
 
 .col-6-offset {
-  margin-left: widthColumns(6); }
+  margin-left: 50%; }
 
 .col-7-offset {
-  margin-left: widthColumns(7); }
+  margin-left: 58.33333%; }
 
 .col-8-offset {
-  margin-left: widthColumns(8); }
+  margin-left: 66.66667%; }
 
 .col-9-offset {
-  margin-left: widthColumns(9); }
+  margin-left: 75%; }
 
 .col-10-offset {
-  margin-left: widthColumns(10); }
+  margin-left: 83.33333%; }
 
 .col-11-offset {
-  margin-left: widthColumns(11); }
+  margin-left: 91.66667%; }
 
 .col-12-offset {
-  margin-left: widthColumns(12); }
+  margin-left: 100%; }
+
+* {
+  font-family: "Raleway", sans-serif; }
 
 .center {
   text-align: center; }
@@ -96,17 +101,13 @@
 .right {
   text-align: right; }
 
-.horizontal {
+.header ul {
   display: flex;
   flex-direction: row;
+  list-style: none;
   justify-content: center; }
-
-.list-none {
-  list-style: none; }
-
-.list-none li {
-  padding: 3vh;
-  font-family: "Raleway", sans-serif; }
+  .header ul li {
+    padding: 1%; }
 
 .img-responsive {
   display: block;
@@ -138,5 +139,15 @@
   .method-podcast p {
     max-height: 96px;
     line-height: 24px; }
+
+.date {
+  font-family: "Roboto Mono", monospace; }
+
+.img-asana {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px; }
 
 /*# sourceMappingURL=style.css.map */

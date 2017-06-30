@@ -1,40 +1,48 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.container{
+
+.container {
   width: 100%;
-  // max-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-.row{
-  &:before{
-    content: " ";
-    display: table;
+
+.templateRow {
+  content: " ";
+  display: table;
+}
+
+.row {
+  &:before {
+    @extend .templateRow;
   }
-  &:after{
-    @extend .row:before;
+  &:after {
+    @extend .templateRow;
     clear: both;
   }
 }
-[class*="col-"]{
-  min-height: 7px;
-  padding: 12px;
+
+[class*="col-"] {
   float: left;
+  min-height: 7px;
+  padding: 7px 0px;
 }
 
-@function anchoColumnas($columns){
-  @return percentage($columns/12);
+@function widthColumns($column) {
+  @return percentage(($column/12));
 }
 
-@for  $numColumns from 1 through 12 {
-  .col-#{$numColumns}{
-    width: anchoColumnas($numColumns);
+@for $column from 1 through 12 {
+  .col-#{$column} {
+    width: widthColumns($column);
   }
 }
-@for $numColumns from 1 through 12 {
-    .col-#{$numColumns}-offset {
-        margin-left: widthColumns($numColumns);
-    }
+
+@for $numColumn from 1 through 12 {
+  .col-#{$numColumn}-offset {
+    margin-left: widthColumns($numColumn);
+  }
 }
