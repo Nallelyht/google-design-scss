@@ -1,0 +1,5 @@
+@mixin text-footer ($padd){
+  font-family: $font-roboto;
+  color: $color-footer;
+  font-size: $padd;	
+}

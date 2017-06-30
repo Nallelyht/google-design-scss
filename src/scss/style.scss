@@ -1,7 +1,8 @@
 @import 'grid';
 @import 'variables';
+@import 'mixin';
 * {
-  font-family: $font-contenido;
+  font-family: $font-raleway;
 }
 
 .center {
@@ -11,8 +12,6 @@
 .right {
   text-align: right;
 }
-
-.horizontal {}
 
 .header {
   ul {
@@ -33,12 +32,12 @@
 }
 
 .titule {
-  font-family: $font-titulo;
+  font-family: $font-roboto;
   color: $titulo-gris;
 }
 
 .content {
-  font-family: $font-contenido;
+  font-family: $font-raleway;
   color: $contenido-gris;
 }
 
@@ -65,7 +64,7 @@
 }
 
 .date {
-  font-family: $font-fecha;
+  font-family: $font-roboto-mono;
 }
 
 .img-asana {
@@ -74,4 +73,22 @@
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;
+}
+.container{
+  hr{
+    border: 2px solid $color-hr-azul;
+  }
+}
+footer{
+  box-shadow: 0 -0.1875rem 0.125rem #efefef;
+  width: 100%;
+  padding: 3%;
+}
+.footer-text{
+ @include text-footer ($font-footer)
+}
+ul{
+  @extend .footer-text;
+  list-style: none;
+  display: inline-block;
 }
