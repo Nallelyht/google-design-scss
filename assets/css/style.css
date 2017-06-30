@@ -150,4 +150,21 @@
   display: inline-block;
   margin-right: 8px; }
 
+.container hr {
+  border: 2px solid #4285f4; }
+
+footer {
+  box-shadow: 0 -0.1875rem 0.125rem #efefef;
+  width: 100%;
+  padding: 3%; }
+
+.footer-text, ul {
+  font-family: "Roboto", sans-serif;
+  color: #5f6368;
+  font-size: 0.9rem; }
+
+ul {
+  list-style: none;
+  display: inline-block; }
+
 /*# sourceMappingURL=style.css.map */
